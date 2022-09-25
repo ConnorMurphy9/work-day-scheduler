@@ -128,7 +128,7 @@ else {
 function targetTime6() {
     var div = document.getElementById('3pm');
     var data = div.getAttribute('data-hour')
-    console.log(data);
+  
 
 if (data < currentTime) {
         div.classList.add("past");
@@ -147,7 +147,7 @@ else {
 function targetTime7() {
     var div = document.getElementById('4pm');
     var data = div.getAttribute('data-hour')
-    console.log(data);
+   
 
 if (data < currentTime) {
         div.classList.add("past");
@@ -166,7 +166,7 @@ else {
 function targetTime8() {
     var div = document.getElementById('5pm');
     var data = div.getAttribute('data-hour')
-    console.log(data);
+   
 
 if (data < currentTime) {
         div.classList.add("past");
@@ -234,14 +234,6 @@ function save8() {
     localStorage.setItem('saveData8', JSON.stringify(saveData8));
    
 };
-console.log(btnAm9);
-console.log(btnAm10);
-console.log(btnAm11);
-console.log(btnpm12);
-console.log(btnPm1);
-
-
-
 
 
 
@@ -255,91 +247,52 @@ btnPm3.addEventListener("click", save6);
 btnPm4.addEventListener("click", save7);
 btnPm5.addEventListener("click", save8);
 
-// btnAm11.addEventListener("click", function(event) {
-//     event.preventDefault();
-//      save2();
-// });
-
-// btpm12.addEventListener("click", function(event) {
-//     event.preventDefault();
-//      save3();
-// });
-
-// btnPm1.addEventListener("click", function(event) {
-//     event.preventDefault();
-//      save4();
-// });
-
-// btnPm2.addEventListener("click", function(event) {
-//     event.preventDefault();
-//      save5();
-// });
-
-// btnPm3.addEventListener("click", function(event) {
-//     event.preventDefault();
-//      save6();
-// });
-
-// btnPm4.addEventListener("click", function(event) {
-//     event.preventDefault();
-//      save7();
-// });
-
-// btnPm5.addEventListener("click", function(event) {
-//     event.preventDefault();
-//      save8();
-// });
-
 
 function displayTask0() {
     var displayData0 = JSON.parse(localStorage.getItem("saveData0"));
-    document.getElementById("9am").textContent = displayData0;
+    document.getElementById("9am").value = displayData0;
+    console.log(displayData0);
 };
 
 function displayTask1() {
     var displayData1 = JSON.parse(localStorage.getItem("saveData1"));
-    document.getElementById("10am").textContent = displayData1;
+    document.getElementById("10am").value = displayData1;
 };
 
 function displayTask2() {
     var displayData2 = JSON.parse(localStorage.getItem("saveData2"));
-    document.getElementById("11am").textContent = displayData2;
+    document.getElementById("11am").value = displayData2;
 };
 
 function displayTask3() {
     var displayData3 = JSON.parse(localStorage.getItem("saveData3"));
-    document.getElementById("12pm").textContent = displayData3;
+    document.getElementById("12pm").value = displayData3;
 };
 
 function displayTask4() {
     var displayData4 = JSON.parse(localStorage.getItem("saveData4"));
-    document.getElementById("1pm").textContent = displayData4;
+    document.getElementById("1pm").value = displayData4;
 };
 
 function displayTask5() {
     var displayData5 = JSON.parse(localStorage.getItem("saveData5"));
-    document.getElementById("2pm").textContent = displayData5;
+    document.getElementById("2pm").value = displayData5;
 };
 
 function displayTask6() {
     var displayData6 = JSON.parse(localStorage.getItem("saveData6"));
-    document.getElementById("3pm").textContent = displayData6;
+    document.getElementById("3pm").value = displayData6;
 };
 
 function displayTask7() {
     var displayData7 = JSON.parse(localStorage.getItem("saveData7"));
-    document.getElementById("4pm").textContent = displayData7;
+    document.getElementById("4pm").value = displayData7;
 };
 
 function displayTask8() {
     var displayData8 = JSON.parse(localStorage.getItem("saveData8"));
-    document.getElementById("5pm").textContent = displayData8;
+    document.getElementById("5pm").value = displayData8;
 };
-
-
-
-
-
 
 
 targetTime0();
@@ -361,3 +314,4 @@ displayTask5();
 displayTask6();
 displayTask7();
 displayTask8();
+
