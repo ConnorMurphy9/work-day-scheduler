@@ -11,7 +11,7 @@ N/A
 
 ## Usage
 
-To use this scheduler, simply click one of the boxes and start typing. The information entered will save to the user's local storage and appear on the page the next time the user opens the website. This will let the user carry on where they last left off. 
+To use this scheduler, simply click one of the boxes and start typing. When the user clicks the blue save buttons next to each box, the information entered will save to the user's local storage and appear on the page the next time the user opens the website. This will let the user carry on where they last left off. 
 
 ## Credits
 
@@ -21,3 +21,5 @@ N/A
 
 Please refer to the LICENSE in the repo.
 
+
+https://connormurphy9.github.io/work-day-scheduler/
